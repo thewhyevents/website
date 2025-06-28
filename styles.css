@@ -1,0 +1,33 @@
+body {
+  background-color: #0f172a;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+}
+.btn-outline-light:hover {
+  background: white;
+  color: black;
+}
+.text-emerald {
+  color: #34d399;
+}
+.bg-emerald {
+  background-color: #10b981;
+}
+.section {
+  padding: 80px 15px;
+}
+.card {
+  background: #1e293b;
+  border: 1px solid #334155;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.card p {
+  color: #cbd5e1;
+  flex-grow: 1;
+}
+footer {
+  background: #000;
+  border-top: 1px solid #334155;
+}
