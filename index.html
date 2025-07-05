@@ -1,143 +1,569 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title> THE WHY MUN 25</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
-  <link href="styles.css" rel="stylesheet">
+  <title>The Why MUN</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- AOS CSS -->
+  <link href=" https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- Custom Styles -->
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      background-image: url("images/Bg_Image.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+
+      color: white;
+    }
+
+    .text-shadow {
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.75);
+    }
+  </style>
 </head>
-<body>
-  <!-- Hero -->
-  <section class="vh-100 text-center d-flex flex-column justify-content-center align-items-center" style="background-image: url('https://source.unsplash.com/1600x900/?united-nations,conference'); background-size: cover; background-position: center;">
-    <h1 class="display-3 fw-bold text-shadow">THE WHY MUN 2025</h1>
-    <p class="lead">WHY Model United Nations : WHY Question. WHY Resist. WHY Reform</p>    <p>19-20 JULY 2025 | Chhatrapati Sambhaijinagar, India</p>
-    <div class="mt-4">
-      <a href="https://forms.gle/naJo3sLZDtxNzb4f6" target="_blank" class="btn bg-emerald text-white me-2">Register Now</a>
-      <a href="#about" class="btn btn-outline-light">Learn More</a>
+
+<body class="text-white ">
+  <!-- Header -->
+  <header class="shadow-lg sticky top-0 z-40 bg-black/20 backdrop-blur-sm text-shadow shadow-3xl">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <!-- Logo and Title -->
+      <div class="flex items-center">
+        <img src="images/logo2.png" alt="The Why MUN Logo" class="h-full w-24  object-contain" />
+
+      </div>
+
+      <!-- Navigation -->
+      <nav class="space-x-6 hidden md:flex">
+        <a href="#about" class="hover:text-yellow-400 transition">About</a>
+        <a href="#agendas" class="hover:text-yellow-400 transition">Agendas</a>
+        <a href="#team" class="hover:text-yellow-400 transition">Team</a>
+        <a href="#contact" class="hover:text-yellow-400 transition">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="h-screen flex items-center justify-center text-center bg-black/10">
+    <div class="container mx-auto px-4">
+      <h2 class="text-6xl md:text-7xl font-bold mb-6">
+        Empowering Global Dialogue Through MUN
+      </h2>
+      <p class="text-2xl md:text-3xl max-w-4xl mx-auto mb-8 text-gray-300">
+        Organizing impactful Model United Nations conferences that inspire
+        leadership, diplomacy, and global understanding.
+      </p>
+      <a href="https://forms.gle/naJo3sLZDtxNzb4f6" target="_blank"
+        class="inline-block bg-yellow-500 hover:bg-yellow-400 text-black font-semibold px-8 py-4 rounded transition text-lg">
+        Register Now
+      </a>
     </div>
   </section>
 
-  <!-- About -->
-  <section id="about" class="section container" data-aos="fade-up">
-    <div class="row align-items-center">
-      <div class="col-md-6 mb-4 mb-md-0">
-        <img src="images/logo.png"  class="img-fluid rounded shadow" />
-      </div>
-      <div class="col-md-6">
-        <h2 class="mb-3">About WHY MUN</h2>
-        <p>WHY MUN is an international youth conference where students across India step into the shoes of diplomats to debate pressing global issues. It fosters leadership, diplomacy, and global awareness through simulated UN sessions.</p>
+  <!-- About Section -->
+  <section id="about" class="py-16 bg-black/40 scroll-mt-24" data-aos="zoom-in" data-aos-duration="1000">
+    <div class="container mx-auto px-4">
+      <h3 class="text-2xl font-bold mb-4 text-center">Who We Are</h3>
+      <p class="max-w-3xl mx-auto text-white leading-relaxed">
+        The Why MUN is dedicated to fostering critical thinking, public
+        speaking, and international cooperation through high-quality Model
+        United Nations experiences. Our team brings together passionate
+        educators, seasoned organizers, and young leaders committed to
+        empowering students through simulation-based learning.
+      </p>
+    </div>
+  </section>
+
+  <!-- Events Section -->
+  <section id="agendas" class="py-16 bg-black/40 scroll-mt-24" data-aos="fade-up">
+    <div class="container mx-auto px-4">
+      <h3 class="text-3xl font-bold text-white mb-12 text-center">
+        Committees & Agendas
+      </h3>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-white">
+        <!-- UNSC -->
+        <div class="backdrop-blur-sm p-6 rounded-lg border-2 border-white/10">
+          <b><h5 class="text-[#B59E7D] font-semibold text-xl mb-2">UNSC</h5></b>
+          <p>
+            Deliberations on the Collapse of JCPOA and its Implications for
+            International Peace, Nuclear Non-Proliferation, and Regional
+            Security in the Middle East
+          </p>
+        </div>
+
+        <!-- UNEP -->
+        <div class="backdrop-blur-sm p-6 rounded-lg border-2 border-white/10">
+          <h4 class="text-[#B59E7D] font-semibold text-xl mb-2">UNEP</h4>
+          <p>
+            Strengthening Global Efforts to Tackle Plastic Pollution and
+            Promote a Circular Economy
+          </p>
+        </div>
+
+        <!-- AIPPM -->
+        <div class="backdrop-blur-sm p-6 rounded-lg border-2 border-white/10">
+          <h4 class="text-[#B59E7D] font-semibold text-xl mb-2">AIPPM</h4>
+          <p>
+            Uniform Civil Code: Necessity for Unity or Threat to Diversity?
+          </p>
+        </div>
+
+        <!-- DISEC -->
+        <div class="backdrop-blur-sm p-6 rounded-lg border-2 border-white/10">
+          <h4 class="text-[#B59E7D] font-semibold text-xl mb-2">DISEC</h4>
+          <p>
+            Addressing the Militarization and Regional Security Challenges in
+            the Middle East
+          </p>
+        </div>
+
+        <!-- UNHRC -->
+        <div class="backdrop-blur-sm p-6 rounded-lg border-2 border-white/10">
+          <h4 class="text-[#B59E7D] font-semibold text-xl mb-2">UNHRC</h4>
+          <p>
+            Leveraging Artificial Intelligence through Technical Cooperation
+            and Capacity-Building to Strengthen National Frameworks for the
+            Promotion and Protection of Human Rights
+          </p>
+        </div>
+
+        <!-- IPC -->
+        <div class="backdrop-blur-sm p-6 rounded-lg border-2 border-white/10">
+          <h4 class="text-[#B59E7D] font-semibold text-xl mb-2">IPC</h4>
+          <p>
+            Delivering the Truth to Masses with Free Speech, Journalism and
+            Open Discussions
+          </p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Committees -->
-  <section class="section bg-dark container" data-aos="fade-up">
-    <h2 class="text-center mb-5">Committees & Agendas</h2>
-    <div class="row">
-      <div class="col-md-4 mb-4" data-aos="zoom-in">
-        <div class="card p-4">
-          <h4 class="text-emerald">UNSC</h4>
-          <p class="text-light">Delebrations on the Collapse of JCPOA and it's Implications for International Peace, Nuclear Non-Proliferation, and Regional Security in the Middle East</p>
+  <!-- Executive Board -->
+
+  <section id="eb" class="py-16 bg-black/30 scroll-mt-32" data-aos="fade-up">
+    <div class="container mx-auto px-4">
+      <h3 class="text-3xl md:text-4xl font-bold mb-16 text-center text-white">
+        Executive Board
+      </h3>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12 place-items-center" data-aos="zoom-in"> 
+        <!-- EB Member 1 -->
+        <div class="text-center transition transform hover:scale-105 duration-300">
+          <div class="mx-auto w-[200px] h-[200px]">
+            <img src="images/Anurang_Sarda.jpeg" alt="EB Member 1"
+              class="rounded-full border-4 border-[#B59E7D] w-full h-full object-cover" />
+          </div>
+          <h5 class="text-[#B59E7D] text-2xl font-semibold mt-4">Chairperson – UNSC</h5>
+          <p class="text-white text-2xl">Anurang Sarda</p>
         </div>
-      </div>
-      <div class="col-md-4 mb-4" data-aos="zoom-in">
-        <div class="card p-4">
-          <h4 class="text-emerald">UNEP</h4>
-          <p class="text-light">Strengthening Global Efforts to Tackle Plastic Pollution and Promote a Circular Economy</p>
+
+        <!-- EB Member 2 -->
+        <div class="text-center transition transform hover:scale-105 duration-300">
+          <div class="mx-auto w-[200px] h-[200px]">
+            <img src="images/Profile_pic.jfif" alt="EB Member 2"
+              class="rounded-full border-4 border-[#B59E7D] w-full h-full object-cover" />
+          </div>
+          <h5 class="text-[#B59E7D] text-2xl font-semibold mt-4">Co-Chair – UNSC</h5>
+          <p class="text-white text-2xl">Saad Zaleel</p>
         </div>
-      </div>
-      <div class="col-md-4 mb-4" data-aos="zoom-in">
-        <div class="card p-4">
-          <h4 class="text-emerald">AIPPM</h4>
-          <p class="text-light">Uniform Civil Code: Necessity for Unity or Threat to Diversity ?</p>
+
+        <!-- EB Member 3 -->
+         <div class="text-center transition transform hover:scale-105 duration-300">
+          <div class="mx-auto w-[200px] h-[200px]">
+            <img src="images/Sankarshan_Joshi.JPG" alt="EB Member 3"
+              class="rounded-full border-4 border-[#B59E7D] w-full h-full object-cover" />
+          </div>
+          <h5 class="text-[#B59E7D] text-2xl font-semibold mt-4">Chairperson – UNEP</h5>
+          <p class="text-white text-2xl">Sankarshan Joshi</p>
         </div>
-      </div>
-      <div class="col-md-4 mb-4" data-aos="zoom-in">
-        <div class="card p-4">
-          <h4 class="text-emerald">DISEC</h4>
-          <p class="text-light">Addressing the Militarization and Regional Security Challenges in the Middle East</p>
+        <!-- EB Member 4 -->
+         <div class="text-center transition transform hover:scale-105 duration-300">
+          <div class="mx-auto w-[200px] h-[200px]">
+            <img src="images/Aayushi_Kombde.JPG" alt="EB Member 3"
+              class="rounded-full border-4 border-[#B59E7D] w-full h-full object-cover" />
+          </div>
+          <h5 class="text-[#B59E7D] text-2xl font-semibold mt-4">Vice-Chair – UNEP</h5>
+          <p class="text-white text-2xl">Aayushi Komde</p>
         </div>
-      </div>
-      <div class="col-md-4 mb-4" data-aos="zoom-in">
-        <div class="card p-4">
-          <h4 class="text-emerald">UNHRC</h4>
-          <p class="text-light">Leveraging Artificial Intelligence through Technical Cooperation and Capacity-Building to Stengthen National Framwworks for the Promotion and Protection and Human Rights</p>
+        <!-- EB Member 5 -->
+         <div class="text-center transition transform hover:scale-105 duration-300">
+          <div class="mx-auto w-[200px] h-[200px]">
+            <img src="images/Aarav.jpeg" alt="EB Member 3"
+              class="rounded-full border-4 border-[#B59E7D] w-full h-full object-cover" />
+          </div>
+          <h5 class="text-[#B59E7D] text-2xl font-semibold mt-4">Chairperson – AIPPM</h5>
+          <p class="text-white text-2xl">Aarav Sharma</p>
         </div>
-      </div>
-      <div class="col-md-4 mb-4" data-aos="zoom-in">
-        <div class="card p-4">
-          <h4 class="text-emerald">IPC</h4>
-          <p class="text-light">Delivering the Truth to Masses with Free Speech, Journalism and Open Discussions</p>
+        <!-- EB Member 6 -->
+         <div class="text-center transition transform hover:scale-105 duration-300">
+          <div class="mx-auto w-[200px] h-[200px]">
+            <img src="images/Nisha.jpeg" alt="EB Member 3"
+              class="rounded-full border-4 border-[#B59E7D] w-full h-full object-cover" />
+          </div>
+          <h5 class="text-[#B59E7D] text-2xl font-semibold mt-4">Vice-Chair – AIPPM</h5>
+          <p class="text-white text-2xl">Nishi Jha</p>
+        </div>
+        <!-- EB Member 7 -->
+         <div class="text-center transition transform hover:scale-105 duration-300">
+          <div class="mx-auto w-[200px] h-[200px]">
+            <img src="images/Nimish.jpeg" alt="EB Member 3"
+              class="rounded-full border-4 border-[#B59E7D] w-full h-full object-cover" />
+          </div>
+          <h5 class="text-[#B59E7D] text-2xl font-semibold mt-4">Chairperson – DISEC</h5>
+          <p class="text-white text-2xl">Nimish Bangale</p>
+        </div>
+        <!-- EB Member 8 -->
+         <div class="text-center transition transform hover:scale-105 duration-300">
+          <div class="mx-auto w-[200px] h-[200px]">
+            <img src="images/Nikita.jpeg" alt="EB Member 3"
+              class="rounded-full border-4 border-[#B59E7D] w-full h-full object-cover" />
+          </div>
+          <h5 class="text-[#B59E7D] text-2xl font-semibold mt-4">Vice-Chair – DISEC</h5>
+          <p class="text-white text-2xl">Nikita Poduval</p>
+        </div>
+        <!-- EB Member 9 -->
+         <div class="text-center transition transform hover:scale-105 duration-300">
+          <div class="mx-auto w-[200px] h-[200px]">
+            <img src="images/Devdatta_J.jpg" alt="EB Member 3"
+              class="rounded-full border-4 border-[#B59E7D] w-full h-full object-cover" />
+          </div>
+          <h5 class="text-[#B59E7D] text-2xl font-semibold mt-4">Chairperson – UNHRC</h5>
+          <p class="text-white text-2xl">Devdatta Jahirabadkar</p>
+        </div>
+        <!-- EB Member 10 -->
+         <div class="text-center transition transform hover:scale-105 duration-300">
+          <div class="mx-auto w-[200px] h-[200px]">
+            <img src="images/Kaushika_More.jpeg" alt="EB Member 3"
+              class="rounded-full border-4 border-[#B59E7D] w-full h-full object-cover" />
+          </div>
+          <h5 class="text-[#B59E7D] text-2xl font-semibold mt-4">Vice-Chair – UNHRC</h5>
+          <p class="text-white text-2xl">Kaushiki More</p>
+        </div>
+        <!-- EB Member 11 -->
+         <div class="text-center transition transform hover:scale-105 duration-300">
+          <div class="mx-auto w-[200px] h-[200px]">
+            <img src="images/Rahi.jpeg" alt="EB Member 3"
+              class="rounded-full border-4 border-[#B59E7D] w-full h-full object-cover object-top" />
+          </div>
+          <h5 class="text-[#B59E7D] text-2xl font-semibold mt-4">Editor-in-cheif – IPC </h5>
+          <p class="text-white text-2xl">Rahi Gaikwad</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Schedule -->
-  <section class="section container" data-aos="fade-up">
-    <h2 class="text-center mb-5">Conference Schedule</h2>
-    <ul class="fs-4 lh-lg">
-      <li><strong>Day 1:</strong> Registration, Opening Ceremony, Training</li>
-      <li><strong>Day 2:</strong> Committee Sessions, Awards, Closing Ceremony</li>
-    </ul>
-  </section>
 
-  <!-- Delegate Info -->
-  <section class="section bg-dark container text-center" data-aos="fade-up">
-    <h2 class="mb-4">Delegate Information</h2>
-    <p>Open to students aged 14–22</p>
-    <p>Fees: ₹1299 (Individual Registration), ₹1099 (Group Delegation Registration)</p>
-    <p class="text-secondary">Step-by-step registration includes form submission, fee payment, and confirmation email.</p>
-  </section>
+  <!-- conference Schedule -->
+  <section class="py-20 bg-black/30 backdrop-blur-sm text-white scroll-mt-24">
+    <div class="container mx-auto px-6">
+      <h3 class="text-3xl font-bold text-center mb-12">
+        Conference Schedule
+      </h3>
 
-  <!-- Team -->
-  <section class="section container" data-aos="fade-u p">
-    <h2 class="text-center mb-5">Organizing Team</h2>
-    <div class="row text-center">
-      <div class="col-md-4" data-aos="zoom-in">
-        <img src="images/deva.jpg" class="rounded-circle mb-3 border border-emerald" style="width: 150px; height: 150px; object-fit: cover;" />
-        <h5 class="text-emerald">Secretary-General</h5>
-        <p class="fs-5">Devang Patil</p>
-      </div>
-      <div class="col-md-4" data-aos="zoom-in">
-        <img src="images/sneha.jpg" class="rounded-circle mb-3 border border-emerald" style="width: 150px; height: 150px; object-fit: cover;" />
-        <h5 class="text-emerald">Director General</h5>
-        <p class="fs-5">Sneha Mittal</p>
-      </div>
-      <div class="col-md-4" data-aos="zoom-in">
-        <img src="images/yash.jpg" class="rounded-circle mb-3 border border-emerald" style="width: 150px; height: 150px; object-fit: cover;" />
-        <h5 class="text-emerald">USG Logistics</h5>
-        <p class="fs-5">Yash Ghodele</p>
+      <!-- Timeline container -->
+      <div class="flex flex-col md:flex-row justify-center items-center gap-20 ">
+        <!-- Day 1 Block -->
+        <div class="text-center">
+          <h4 class="text-2xl font-bold mb-2 ">Day 1</h4>
+
+          <!-- Line and Dot -->
+          <div class="relative w-48 h-6 mx-auto flex items-center justify-center">
+            <div class="absolute [width:200%] h-0.5 bg-[#CBB799]"></div>
+            <div class="w-5 h-5 bg-[#6F4D38] border-2 border-black rounded-full z-10"></div>
+          </div>
+
+          <!-- Agenda -->
+          <div class="mt-4 space-y-1 text-lg text-gray-300">
+            <p>Registration</p>
+            <p>Opening Ceremony</p>
+            <p>Training</p>
+          </div>
+        </div>
+
+        <!-- Day 2 Block -->
+        <div class="text-center">
+          <h4 class="text-2xl font-bold mb-2">Day 2</h4>
+
+          <!-- Line and Dot -->
+          <div class="relative w-48 h-6 mx-auto flex items-center justify-center">
+            <div class="absolute [width:200%] h-0.5 bg-[#CBB799]"></div>
+            <div class="w-5 h-5 bg-[#6F4D38] border-2 border-black rounded-full z-10"></div>
+          </div>
+
+          <!-- Agenda -->
+          <div class="mt-4 space-y-1 text-lg text-gray-300">
+            <p>Committee Sessions</p>
+            <p>Awards</p>
+            <p>Closing Ceremony</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Contact -->
-  <section class="section container" data-aos="fade-up">
-    <h2 class="text-center mb-4">Contact & Venue</h2>
-    <div class="row">      <div class="col-md-6">
-        <p>Email: <a href="mailto:  thewhyevents.info@gmail.com" class="text-emerald">thewhyevents.info@gmail.com</a></p>
-        <p>Instagram: <a href="https://www.instagram.com/thewhyevents" target="_blank" class="text-emerald">thewhyevents</a></p>
-        <p>Contact No.: <span class="text-emerald">+919890169500</span></p>
-      </div>
-      <div class="col-md-6">
-        <iframe class="w-100 rounded" height="250" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3753.16124488083!2d75.29578047481392!3d19.833129181533614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdb98430696c6d7%3A0x1711d171c0b65a3!2sMaharashtra%20National%20Law%20University%2C%20Aurangabad!5e0!3m2!1sen!2sin!4v1751104682427!5m2!1sen!2sin" title="Venue Location"></iframe>
+  <!-- Delegate information -->
+  <section class="py-20 bg-black/30 backdrop-blur-sm text-white scroll-mt-24">
+    <div class="container mx-auto px-6 max-w-5xl">
+      <h3 class="text-3xl font-bold text-center mb-12">
+        Delegate Information
+      </h3>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Age Eligibility Card -->
+        <div class="backdrop-blur-sm p-6 rounded-xl border-2 border-white/10">
+          <h4 class="text-[#B59E7D] font-semibold text-2xl mb-2">
+            Eligibility
+          </h4>
+          <p class="text-gray-300 text-lg">
+            Open to students aged
+            <span class="font-semibold text-white">14–22</span>
+            from any academic background.
+          </p>
+        </div>
+
+        <!-- Fees Card -->
+        <div class="backdrop-blur-sm p-6 rounded-xl border-2 border-white/10 shadow-lg text-center">
+          <h4 class="text-[#B59E7D] font-semibold text-2xl mb-2">
+            Registration Fees
+          </h4>
+          <p class="text-white text-base">
+            <strike class="text-xl font-extrabold">1399</strike>
+            <span class="text-3xl font-extrabold">₹ 1299</span><br />
+            <span class="text-lg font-medium">Individual Registration</span>
+          </p>
+          <div class="my-3 h-px bg-white opacity-40"></div>
+          <p class="text-white text-base">
+            <strike class="text-xl font-extrabold">1199</strike>
+            <span class="text-3xl font-extrabold">₹ 1099</span><br />
+            <span class="text-lg font-medium">Group Delegation (per head)</span>
+          </p>
+        </div>
+
+        <!-- Registration Steps Card -->
+        <div class="backdrop-blur-sm p-6 rounded-xl border-2 border-white/10 shadow-lg ">
+          <h4 class="text-2xl font-semibold mb-2 text-[#B59E7D]">
+            Registration Steps
+          </h4>
+          <ol class="list-decimal pl-6 text-lg text-gray-300 space-y-1 mt-2">
+            <li>Fill out the Registration Form.</li>
+            <li>Pay the Fee via UPI/Online.</li>
+            <li>Receive Confirmation Email.</li>
+          </ol>
+        </div>
       </div>
     </div>
   </section>
 
-  <footer class="py-4 text-center">
-    <p class="mb-1">© 2025 WHY MUN. All rights reserved.</p>
-    <div>
-      <a href="#" class="text-emerald me-3">Home</a>
-      <a href="#about" class="text-emerald me-3">About</a>
-      <a href="#" class="text-emerald">Contact</a>
+  <!-- Team Section -->
+  <section id="team" class="py-16 bg-black/20 scroll-mt-32" data-aos="fade-up">
+    <div class="container mx-auto px-4">
+      <h3 class="text-3xl md:text-4xl font-bold mb-16 text-center text-white">
+        Meet Our Core Team
+      </h3>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12 place-items-center" data-aos="zoom-in">
+        <!-- Devang -->
+        <div class="text-center transition transform hover:scale-105 duration-300">
+          <div class="mx-auto w-[200px] h-[200px]">
+            <img src="images/deva.jpg" alt="Devang Patil"
+              class="rounded-full border-4 border-[#B59E7D] w-full h-full object-cover" />
+          </div>
+          <h5 class="text-[#B59E7D] text-2xl font-semibold mt-4">Secretary General</h5>
+          <p class="text-white text-2xl">Devang Patil</p>
+        </div>
+
+        <!-- Sneha -->
+        <div class="text-center transition transform hover:scale-105 duration-300">
+          <div class="mx-auto w-[200px] h-[200px]">
+            <img src="images/sneha.jpg" alt="Sneha Mittal"
+              class="rounded-full border-4 border-[#B59E7D] w-full h-full object-cover" />
+          </div>
+          <h5 class="text-[#B59E7D] text-2xl font-semibold mt-4">Director General</h5>
+          <p class="text-white text-2xl">Sneha Mittal</p>
+        </div>
+
+        <!-- Kirti -->
+        <div class="text-center transition transform hover:scale-105 duration-300">
+          <div class="mx-auto w-[200px] h-[200px]">
+            <img src="images/Kirti.jpg" alt="Kirti Sonawane "
+              class="rounded-full border-4 border-[#B59E7D] w-full h-full object-cover" />
+          </div>
+          <h5 class="text-[#B59E7D] text-2xl font-semibold mt-4">USG Delegate Affairs</h5>
+          <p class="text-white text-2xl">Kirti Sonawane </p>
+        </div>
+        <!-- Varad -->
+        <div class="text-center transition transform hover:scale-105 duration-300">
+          <div class="mx-auto w-[200px] h-[200px]">
+            <img src="images/Varad.jpeg " alt="varad " class="rounded-full border-4 border-[#B59E7D] w-full h-full object-cover" />
+          </div>
+          <h5 class="text-[#B59E7D] text-2xl font-semibold mt-4">Deputy Secretary General</h5>
+          <p class="text-white text-2xl">Varad Deshpande</p>
+        </div>
+        <!-- Dhananjay -->
+        <div class="text-center transition transform hover:scale-105 duration-300">
+          <div class="mx-auto w-[200px] h-[200px]">
+            <img src="images/Dhanajay.jpg" alt="Dhananjay Naiknaware"
+              class="rounded-full border-4 border-[#B59E7D] w-full h-full object-cover" />
+          </div>
+          <h5 class="text-[#B59E7D] text-2xl font-semibold mt-4">Deputy Delegate Affairs</h5>
+          <p class="text-white text-2xl">Dhananjay Naiknaware</p>
+        </div>
+        <!-- Ashutosh -->
+        <div class="text-center transition transform hover:scale-105 duration-300">
+          <div class="mx-auto w-[200px] h-[200px]">
+            <img src="images/Ashutosh.jpeg" alt="Ashutosh Desai"
+              class="rounded-full border-4 border-[#B59E7D] w-full h-full object-cover" />
+          </div>
+          <h5 class="text-[#B59E7D] text-2xl font-semibold mt-4">USG Finance</h5>
+          <p class="text-white text-2xl">Ashutosh Desai</p>
+        </div>
+        <!-- Rushikesh -->
+        <div class="text-center transition transform hover:scale-105 duration-300">
+          <div class="mx-auto w-[200px] h-[200px]">
+            <img src="images/Rushi.jpeg" alt="Rushikesh Kharche"
+              class="rounded-full border-4 border-[#B59E7D] w-full h-full object-cover object-top" />
+          </div>
+          <h5 class="text-[#B59E7D] text-2xl font-semibold mt-4">Deputy Finance</h5>
+          <p class="text-white text-2xl">Rishikesh Kharche</p>
+        </div>
+        <!-- Subodh -->
+        <div class="text-center transition transform hover:scale-105 duration-300">
+          <div class="mx-auto w-[200px] h-[200px]">
+            <img src="images/Subodh.jpeg" alt="Yash Ghodele"
+              class="rounded-full border-4 border-[#B59E7D] w-full h-full object-cover" />
+          </div>
+          <h5 class="text-[#B59E7D] text-2xl font-semibold mt-4">USG Administration</h5>
+          <p class="text-white text-2xl">Subodh Donglikar </p>
+        </div>
+        <!-- Pallav -->
+        <div class="text-center transition transform hover:scale-105 duration-300">
+          <div class="mx-auto w-[200px] h-[200px]">
+            <img src="images/Pallav.jpg" alt="Yash Ghodele"
+              class="rounded-full border-4 border-[#B59E7D] w-full h-full object-cover" />
+          </div>
+          <h5 class="text-[#B59E7D] text-2xl font-semibold mt-4">USG Administration</h5>
+          <p class="text-white text-2xl">Pallav Wankhede </p>
+        </div>
+        <!-- Shriya -->
+        <div class="text-center transition transform hover:scale-105 duration-300">
+          <div class="mx-auto w-[200px] h-[200px]">
+            <img src="images/Shriya.jpg" alt="Shriya Sharma"
+              class="rounded-full border-4 border-[#B59E7D] w-full h-full object-cover" />
+          </div>
+          <h5 class="text-[#B59E7D] text-2xl font-semibold mt-4">USG Hospitality</h5>
+          <p class="text-white text-2xl">Shriya Sharma </p>
+        </div>
+        <!-- Yash -->
+        <div class="text-center transition transform hover:scale-105 duration-300">
+          <div class="mx-auto w-[200px] h-[200px]">
+            <img src="images/yash.jpg" alt="Yash Ghodele"
+              class="rounded-full border-4 border-[#B59E7D] w-full h-full object-cover" />
+          </div>
+          <h5 class="text-[#B59E7D] text-2xl font-semibold mt-4">USG Logistics</h5>
+          <p class="text-white text-2xl">Yash Ghodele</p>
+        </div>
+        <!-- Dhruv -->
+        <div class="text-center transition transform hover:scale-105 duration-300">
+          <div class="mx-auto w-[200px] h-[200px]">
+            <img src="images/Dhruv.jpg" alt="Yash Ghodele"
+              class="rounded-full border-4 border-[#B59E7D] w-full h-full object-cover" />
+          </div>
+          <h5 class="text-[#B59E7D] text-2xl font-semibold mt-4">Deputy Logistics</h5>
+          <p class="text-white text-2xl">Dhruv Naik</p>
+        </div>
+
+      </div>
     </div>
+  </section>
+
+
+  <!-- Contact Section -->
+  <section id="contact"
+    class="py-20 bg-gradient-to-br from-black/40 via-black/30 to-black/40 backdrop-blur-sm text-white"
+    data-aos="fade-up">
+    <div class="container mx-auto px-6 max-w-6xl">
+      <h2 class="text-4xl font-bold text-center mb-16 text-emerald-400">
+        Contact & Venue
+      </h2>
+
+      <div class="grid md:grid-cols-2 gap-12 items-start">
+        <!-- Contact Info Box -->
+        <div class="bg-black/40 rounded-2xl shadow-xl border border-emerald-500 p-8 space-y-8">
+          <div class="flex items-start gap-4">
+            <span class="text-emerald-400 text-2xl">📧</span>
+            <div>
+              <p class="font-semibold text-white">Email</p>
+              <a href="mailto:thewhyevents.info@gmail.com" class="text-emerald-400 underline break-words">
+                thewhyevents.info@gmail.com
+              </a>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <span class="text-emerald-400 text-2xl">📱</span>
+            <div>
+              <p class="font-semibold text-white">Contact Number</p>
+              <p class="text-emerald-400">+91 98901 69500</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <img src="images/instagram.png" alt="Instagram" class="w-6 h-6 mt-1" />
+            <div>
+              <p class="font-semibold text-white">Instagram</p>
+              <a href="https://www.instagram.com/thewhyevents" target="_blank" class="text-emerald-400 underline">
+                @thewhyevents
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Map Embed -->
+        <div class="rounded-2xl overflow-hidden shadow-xl border-2 border-emerald-500">
+          <iframe class="w-full h-72 md:h-full"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3753.16124488083!2d75.29578047481392!3d19.833129181533614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdb98430696c6d7%3A0x1711d171c0b65a3!2sMaharashtra%20National%20Law%20University%2C%20Aurangabad!5e0!3m2!1sen!2sin!4v1751104682427!5m2!1sen!2sin"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Venue Location">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-6 text-center text-sm text-gray-400 bg-black/80">
+    © 2025 The Why MUN. All rights reserved.
   </footer>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script src="script.js"></script>
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    // Debugging (optional)
+    document.addEventListener("DOMContentLoaded", function () {
+      console.log("AOS loaded:", typeof AOS !== "undefined");
+    });
+
+    // Initialize AOS
+    AOS.init({
+      duration: 1000,
+    });
+  </script>
 </body>
+
 </html>
